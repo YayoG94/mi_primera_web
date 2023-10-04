@@ -149,12 +149,28 @@ padding: 15px 10% 50px 10%;
     margin: 15px;
 }
     
-.form label {
+label {
     vertical-align: top;
-    /* float: left; */
+    display: inline-block;
+    width: 200px; 
+    text-align: left;   
+    color: rgba(0, 0, 0, 0.815);
 }
 
+input{
+    display: inline-block;
+    width: 200px; 
+    font-size: 15px;
+}
+
+#nombre,#email {
+    width: 500px;
+    max-width: 50%;
+    padding-left: 5px;
+}
 #mensaje {
+    padding-left: 5px;
+    max-width: 50%;
     width: 500px;
     height: 100px;
 }
