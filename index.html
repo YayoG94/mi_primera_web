@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera Web</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/c9b87a4bee.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="img/choripan.ico">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header id="encabezado">
+        <h1>Ignacio Galli</h1>
+        <nav class="navbar">
+            <input type="checkbox" id="check" />
+            <label for="check" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <ul class="nav-links">
+                <li><a class="links" href="">Inicio</a></li> <!--Agregar links-->
+                <li><a class="links" href="">Main</a></li> <!--Probar con una Ruta Relativa-->
+                <li><a class="links" href="index.html#sobremi">Acerca de Mi</a></li>
+                <li><a class="links" href="index.html#viñetas">Destinos</a></li>
+                <li><a class="links" href="index.html#contactos">Contactos</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <div id="sobremi">
+            <h2>Sobre Mí, estudiante de Egg.live</h2>
+            <p class="textoinicial">Hola mi nombre es Ignacio, esta es mi primera Web, donde estare probando mi
+                conocimiento HTML y de CSS, soy una persona en busqueda de ampliar su conocimiento de programación</p>
+        </div>
+
+        <div class="fotosdescripcion">
+            <div> <img class="perfil" src="img/Mike_Amigorena.jpg" alt="Foto de perfil"> </div>
+            <div class="descripcion">
+                <p>Probadno, necesit poner un texto largo y que parezca q tiene sentido justo aca asique les hablo de q
+                    en el lol hay champs como darius que tenes que blablabla y despues les ulteas con las 5 marcas.
+                    Probadno, necesit poner un texto largo y que parezca q tiene sentido justo aca asique les hablo de q
+                    en el lol hay champs como darius que tenes que blablabla y despues les ulteas con las 5 marcas.
+                    Probadno, necesit poner un texto largo y que parezca q tiene sentido justo aca asique les hablo de q
+                    en el lol hay champs como darius que tenes que blablabla y despues les ulteas con las 5 marcas.
+                    Probadno, necesit poner un texto largo y que parezca q tiene sentido justo aca asique les hablo de q
+                    en el lol hay champs como darius que tenes que blablabla y despues les ulteas con las 5 marcas</p>
+            </div>
+        </div>
+
+        <div class="fotosdescripcion">
+            <div class="descripcion">
+                <p>Probadno, necesit poner un texto largo y que parezca q tiene sentido justo aca asique les hablo de q
+                    en el lol hay champs como darius que tenes que blablabla y despues les ulteas con las 5 marcas.
+                    Probadno, necesit poner un texto largo y que parezca q tiene sentido justo aca asique les hablo de q
+                    en el lol hay champs como darius que tenes que blablabla y despues les ulteas con las 5 marcas.
+                    Probadno, necesit poner un texto largo y que parezca q tiene sentido justo aca asique les hablo de q
+                    en el lol hay champs como darius que tenes que blablabla y despues les ulteas con las 5 marcas.
+                    Probadno, necesit poner un texto largo y que parezca q tiene sentido justo aca asique les hablo de q
+                    en el lol hay champs como darius que tenes que blablabla y despues les ulteas con las 5 marcas</p>
+            </div>
+            <div> <img class="perfil" src="img/kreiste.png" alt="Foto de perfil 2"> </div>
+        </div>
+
+        <div id="viñetas">
+
+            <div class="viñetas2">
+                <img class="imagen-viñeta" src="img/viñeta.jpg" alt="bosque">
+                <h2> Palermo</h2>
+                <div class="texto-viñeta"> ¿Texto generico lol, texto generico lol, texto generico lol, texto generico
+                    lol? ¡Texto generico lol, texto generico lol! </div>
+                <a target="_blank" class="saber-mas" href="index-palermo.html">Saber mas</a>
+            </div>
+
+            <div class="viñetas2">
+                <img class="imagen-viñeta" src="img/viñeta2.jpg" alt="bosque2">
+                <h2> Saavedra </h2>
+                <div class="texto-viñeta"> ¿Texto generico lol, texto generico lol, texto generico lol, texto generico
+                    lol? ¡Texto generico lol, texto generico lol! </div>
+                <a target="_blank" class="saber-mas" href="">Saber mas</a>
+            </div>
+
+            <div class="viñetas2">
+                <img class="imagen-viñeta" src="img/viñeta4.jpg" alt="bosque4">
+                <h2> Ramos Mejía</h2>
+                <div class="texto-viñeta"> ¿Texto generico lol, texto generico lol, texto generico lol, texto generico
+                    lol? ¡Texto generico lol, texto generico lol! </div>
+                <a target="_blank" class="saber-mas" href="">Saber mas</a>
+            </div>
+
+        </div>
+
+        <form class="formulario" id="miFormulario">
+
+            <div class="form">
+                <label for="nombre"> Coloque aqui su Nombre </label>
+                <input id="nombre" type="text" placeholder="Nombre">
+            </div>
+            <div class="form">
+                <label for="email"> Coloque aqui su Mail </label>
+                <input id="email" type="email" name="email" placeholder="Email">
+            </div>
+            <div class="form">
+                <label for="mensaje"> Dejenos su Opinion </label>
+                <textarea id="mensaje" type="text" placeholder="Mensaje"> </textarea>
+            </div>
+
+            <div class="form">
+                <input type="submit" name="btn" id="btn" value="Enviar" onclick= "validarFormulario()">
+            </div>
+            
+            <p id="alerta"></p>
+        </form>
+    </main>
+
+    <footer>
+        <h2 id="contactos">Contactos</h2>
+        <ul>
+            <li><a target="_blank" class="links" href="https://www.instagram.com/ignacio_galli/">Instagram</a></li>
+            <li><a target="_blank" class="links" href="https://wa.me/1136247042">Whatsapp</a></li>
+            <li>yayogalli@gmail.com</li>
+        </ul>
+    </footer>
+</body>
+
+</html>
