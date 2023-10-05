@@ -223,6 +223,11 @@ footer{
 .fuente-acento {color: #b59a61;}
 
 @media (max-width: 768px) {
+    
+    * {
+        list-style-type: none;
+      }
+
     footer {
         text-align: left;
         padding-left: 20px;
