@@ -1,59 +1,178 @@
 *{
-    margin: 0 0px;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    text-align: center;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style-type: none;
+  margin: 0 0px;
+  padding: 0;
 }
 body{
-    background-color: #330231;
+  width: 100%;
+  text-align: center;
+  background: linear-gradient(90deg, rgb(35, 17, 51) 0%, rgb(71, 17, 75) 100%);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
 }
-header{
-    background-color: rgb(80, 36, 97);
-    font-family: 'Courier New', Courier, monospace;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-}
-h1{
-    background-color: rgb(92, 49, 92);
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: 25px;
-    margin-bottom: 10px;
-    border: 2px solid black;
-}
-.navbar{
-    float: top;
-  }
-  
-nav>ul>li {
-    display: inline-block;
-    margin-right: 20px;
-    line-height: 50px;
-  }
 
-  main{
-    background-color: rgb(80, 36, 97);
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+nav>ul>li {
+  display: inline-block;
+  margin-right: 20px;
+  line-height: 20px;
 }
+
+#check {
+  display: none;
+}
+
+.checkbtn {
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+  float: right;
+  line-height: 40px;
+  margin-right: 10px;
+  cursor: pointer;
+  display: none;
+}
+
+header{
+  /* position: fixed;    si quiero q quede flotando el header */
+  width: 100%;
+  background-color: rgba(92, 49, 92, 0.918);
+  font-family: 'Courier New', Courier, monospace;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border: 2px solid black;
+}
+
+header>h1{
+  background-color: rgb(56, 18, 56);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 25px;
+  margin-bottom: 10px;
+  border: 2px solid black;
+}
+
+main{
+  background-color: rgba(63, 23, 63, 0.658);
+  margin: 50px 10%;
+  /* padding-top: 130px;  si quiero q quede flotando el header  */
+  padding-bottom: 20px;
+  border-radius: 10px;
+}
+
+.imagenpalermo {
+  margin: 40px 10px;
+  width: 400px;
+  border-radius: 30px;
+  box-shadow:rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+/* CONFIGURACION DE LAS VIÑETSA CON HIPERVINCULOS INICIO*/
+
+#viñetas{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0px;
+}
+
+.viñetas2{
+  margin: 30px 60px;
+  width: 280px; /* Limita el ancho máximo de cada viñeta */
+  background-color: rgb(88, 44, 79);
+  padding: 20px;
+  border-radius: 10%;
+  box-shadow:rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+#viñetas>div>h2{
+  text-align: left;
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+
+.imagen-viñeta{
+  width: 100%;
+  margin-bottom: 4%;
+  border-radius: 15px;
+}
+
+.texto-viñeta {
+  text-align: left;
+}
+
+.saber-mas {
+  float: left;
+  text-decoration: underline;
+  color: black;
+  padding-top: 5px;
+}
+
+/* CONFIGURACION DE LAS VIÑETSA CON HIPERVINCULOS FIN */
 
 footer{
-    background-color: rgb(80, 36, 97);
-    margin-top: 20px;
-    padding-top: 20px;
+  width: 100%;
+  background-color: rgb(43, 41, 44);
+  margin-top: 20px;
+  padding: 10px 0px;
 }
 
 .links{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: black;}
-  .links:hover{
-    font-size: 20px;
-    color: rgb(69, 5, 71);}
-  .linka:active{
-    color: rgb(39, 2, 31);}
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: black;}
+.links:hover{
+  font-size: 20px;
+  color: rgb(69, 5, 71);}
+.linka:active{
+  color: rgb(39, 2, 31);}
+
+  footer .links:hover {
+      color: rgb(138, 128, 128);
+  }
+
+.fuente-clara {color: #eeeeee;}
+.fuente-oscura {color: #22211f;}
+.fuente-acento {color: #b59a61;}
+
+@media (max-width: 768px) {
+  main {
+    margin: 50px 10px;
+  }
+  footer {
+      text-align: left;
+      padding-left: 20px;
+  }
+  .checkbtn {
+      display: block;
+  }
+  #encabezado ul {
+      position: fixed;
+      width: 50%;
+      height: 100%;
+      background-color: rgba(92, 49, 92, 0.918);
+      text-align: center;
+
+      top: 127px;
+      left: 100%;
+      transition:  all 0.5s;
+  } 
+
+  #check:checked ~ ul {
+      left: 50%;
+      display: block;
+  }
+
+  #encabezado nav ul li {
+      display: block;
+      margin: 50px 0px;
+      line-height: 30px;
+  }
+
+  #encabezado nav ul li a {
+      font-size: 22px;
+  }
+
+  #check:checked ~ .checkbtn {
+      color: white;
+  }
+}
