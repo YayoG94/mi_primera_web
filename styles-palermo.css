@@ -54,10 +54,12 @@ header>h1{
 
 main h2 {
   padding: 15px 0;
+  color: rgba(253, 253, 3, 0.616);
 }
 
 main p {
   margin: 0 50px;
+  color: rgba(255, 255, 255, 0.336);
 }
 
 main{

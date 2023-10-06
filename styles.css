@@ -53,14 +53,26 @@ header>h1{
 }
 
 main{
-    /* background-color: rgb(80, 36, 97); */
     margin-bottom: 20px;
     padding-top: 130px;
     padding-bottom: 20px;
 }
 
+.principal {
+    background-color: rgba(63, 23, 63, 0.658);
+    margin: 50px 10%;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    box-shadow:rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    color: rgba(255, 255, 255, 0.336);
+}
+
 #sobremi{
 padding: 15px 10% 50px 10%;
+}
+
+#sobremi h2 {
+    color: rgba(253, 253, 3, 0.616);
 }
 
 /* CONGIFURACION TEXTO E IMAGEN EN CONJUNTO INICIO */
@@ -77,10 +89,9 @@ padding: 15px 10% 50px 10%;
 
 .descripcion{
     margin-top: 10px;
-    /* margin-left: 10%;
-    margin-right: 10%; */
     max-width: 70%;
     text-align: justify;
+    padding: 20px 0px;
 }
 
 .perfil{
@@ -136,7 +147,8 @@ padding: 15px 10% 50px 10%;
 /* CONFIGURACION FORMULARIO  */
 
 .formulario {
-    background-color: rgb(88, 44, 79);
+    background-color: rgba(63, 23, 63, 0.658);
+    box-shadow:rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     border: 1px solid #000000;
     border-radius: 15px;
     max-width: 100%;
@@ -154,7 +166,7 @@ label {
     display: inline-block;
     width: 200px; 
     text-align: left;   
-    color: rgba(0, 0, 0, 0.815);
+    color: rgba(255, 255, 255, 0.336);
 }
 
 input{
@@ -227,6 +239,15 @@ footer{
     * {
         list-style-type: none;
       }
+
+    .principal {
+        margin: 50px 10px;
+    }
+
+    .descripcion{
+        max-width: 90%;
+        padding: 20px 0px;
+    }
 
     footer {
         text-align: left;
